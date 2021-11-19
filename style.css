@@ -1,1 +1,190 @@
 @charset "utf-8";
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Quicksand", "ヒラギノ丸ゴ Pro W4", "ヒラギノ丸ゴ Pro",
+        "Hiragino Maru Gothic Pro";
+}
+
+.header_container {
+    margin: 0 auto;
+    padding-left: 8%;
+    padding-right: 8%;
+    padding-top: 100px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+
+.logo img {
+    width: 235px;
+}
+
+.header_nav_list {
+    position: fixed;
+    width: 100%;
+    top: 100px;
+    left: 140px;
+}
+
+.header_nav_list ul {
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+}
+.header_nav_list li {
+    margin-right: 170px;
+}
+
+.header_container_second {
+    align-items: center;
+    position: relative;
+    top: 400px;
+    width: 100%;
+    text-align: center;
+}
+
+.fv_border {
+    border-width: 5rem 0rem 0rem 0rem;
+    border-style: solid;
+    border-color: #ffff78;
+    position: relative;
+    top: 10rem;
+    z-index: -100;
+}
+
+.title_text {
+    font-size: 3.7rem;
+}
+
+.header_container_second h1 img {
+    width: 740px;
+}
+
+/* 多角形装飾 */
+
+/* ーーーーーーーここからメインーーーーーーー */
+
+main {
+    position: relative;
+    top: 800px;
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0 1rem;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+/* コンテンツタイトル */
+
+main .container h2 {
+    font-size: 5rem;
+}
+
+.title_border {
+    height: 7px;
+    background-color: #ffff78;
+    border: none;
+    border-radius: 20px;
+    width: 10%;
+    margin: auto;
+}
+
+main .container h3 {
+    font-size: 6rem;
+    margin-top: 20px;
+}
+
+.title_wrap {
+    text-align: center;
+    margin: 0 auto 140px;
+}
+
+/* ーーーーーーーabout わたしについてーーーーーーー */
+
+.About {
+    padding-top: 250px;
+}
+
+.about_inner {
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.about_inner img {
+    width: 36%;
+    height: 36%;
+    margin-right: 3%;
+}
+
+.about_inner p {
+    font-size: 3.5rem;
+    line-height: 1.75;
+    width: 60%;
+    font-feature-settings: "palt";
+}
+
+/* view_more 共通箇所 */
+.view_more p {
+    font-size: 4rem;
+}
+
+.view_more img {
+    width: 24.4%;
+}
+
+.stickarrow {
+    width: 28.6%;
+    height: 40px;
+    border-bottom: 1px solid #333;
+    border-right: 1px solid #333;
+    transform: skew(45deg);
+}
+
+/* ーーーーーーーwork 仕事ーーーーーーー*/
+.Work {
+    padding-top: 250px;
+}
+
+/* figcaptionはview moreで飛んでから制作期間、使用ツールを表示 */
+.Work .figcaption {
+    display: none;
+}
+
+.work_top img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.work_sub {
+    display: flex;
+}
+
+.work_first img {
+    width: 100%;
+    margin-right: 10px;
+}
+
+.work_second img {
+    width: 100%;
+}
+
+.work_second {
+    justify-content: flex-end;
+}
+
+/* ーーーーーーーcontact お問い合わせーーーーーーー */
+
+.Contact {
+    padding-top: 250px;
+}
