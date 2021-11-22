@@ -29,9 +29,9 @@ body {
 }
 
 .header_nav_list {
-    position: fixed;
+    position: relative;
     width: 100%;
-    top: 100px;
+    top: 50%;
     left: 140px;
 }
 
@@ -135,12 +135,23 @@ main .container h3 {
 }
 
 /* view_more 共通箇所 */
-.view_more p {
-    font-size: 4rem;
+
+.view_more {
+    position: relative;
+    width: 1000px;
+    top: 50%;
+    left: 50%;
 }
 
 .view_more img {
     width: 24.4%;
+}
+
+.view_more p {
+    font-size: 4rem;
+    position: absolute;
+    top: 45%;
+    height: 50%;
 }
 
 .stickarrow {
@@ -149,6 +160,9 @@ main .container h3 {
     border-bottom: 1px solid #333;
     border-right: 1px solid #333;
     transform: skew(45deg);
+    position: absolute;
+    top: 50%;
+    left: -2%;
 }
 
 /* ーーーーーーーwork 仕事ーーーーーーー*/
@@ -187,4 +201,18 @@ main .container h3 {
 
 .Contact {
     padding-top: 250px;
+}
+
+/* ーーーーーーーfooterーーーーーーー */
+
+footer {
+    background-color: #ffff78;
+}
+
+footer img {
+    width: 900px;
+}
+
+.snsicon img {
+    width: 50px;
 }
