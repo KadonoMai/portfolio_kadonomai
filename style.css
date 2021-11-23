@@ -47,7 +47,7 @@ body {
 .header_container_second {
     align-items: center;
     position: relative;
-    top: 400px;
+    top: 500px;
     width: 100%;
     text-align: center;
 }
@@ -201,6 +201,15 @@ main .container h3 {
 
 .Contact {
     padding-top: 250px;
+}
+
+input {
+    border: 3px solid #333;
+    background-color: #ffffff;
+    width: 100%;
+    margin: 1rem 0 5rem;
+    padding: 4px 4px;
+    border-radius: 5px;
 }
 
 /* ーーーーーーーfooterーーーーーーー */
