@@ -18,13 +18,16 @@
             <div class="header_container">
                 <p class="logo">
                     <a href="index.html">
-                        <img src="2x/2x/name_S.png" alt="MaiKadono_imgSmall" />
+                        <img
+                            src="2x/2x/name_S@2x.png"
+                            alt="MaiKadono_imgSmall"
+                        />
                     </a>
                 </p>
                 <nav class="header_nav_list">
                     <ul>
                         <li><a href="#About">About</a></li>
-                        <li><a href="Work">Work</a></li>
+                        <li><a href="#Work">Work</a></li>
                         <li><a href="#Blog">Blog</a></li>
                         <li><a href="#Contact">Contact</a></li>
                     </ul>
@@ -34,8 +37,19 @@
                 <p class="title_text">Graphic & Web Designer</p>
                 <hr class="fv_border" />
                 <h1>
-                    <img src="2x/2x/name_B.png" alt="MaiKadono_imgBig" />
+                    <img src="2x/2x/name_B@2x.png" alt="MaiKadono_imgBig" />
                 </h1>
+            </div>
+
+            <picture class="octagon">
+                <source
+                    srcset="2x/2x/sp_octadon@2x.png"
+                    media="(max_width:767px)"
+                />
+                <img src="2x/2x/octagon@2x.png" alt="Webサイト作成画像" />
+            </picture>
+            <div class="triangle">
+                <img src="2x/2x/triangle@2x.png" alt="scroll" />
             </div>
         </header>
 
@@ -63,7 +77,7 @@
                         </p>
                     </div>
                     <!-- view_more -->
-                    <div class="view_more">
+                    <div class="view_more view_more_about">
                         <a href="about.html">
                             <img
                                 src="2x/2x/viewmore@2x.png"
@@ -216,7 +230,7 @@
                                     placeholder="本文"
                                 ></textarea>
                             </li>
-                            <li><input type="submit" class="btbt" /></li>
+                            <li><input type="submit" class="send_bt" /></li>
                         </ul>
                     </form>
                 </section>
@@ -224,13 +238,23 @@
         </main>
         <footer>
             <img src="2x/2x/thank you@2x.png" alt="thankyouイメージ" />
-            <p>Thank you</p>
+            <p class="tankyou">Thank you</p>
             <div class="snsicon">
-                <img src="2x/2x/フッター (3)@2x.png" alt="インスタグラムロゴ" />
-                <img src="2x/2x/フッター (2)@2x.png" alt="フェイスブックロゴ" />
-                <img src="2x/2x/フッター@2x.png" alt="ツイッターロゴ" />
+                <a href="https://www.instagram.com/maaai_1988/">
+                    <img
+                        src="2x/2x/フッター (3)@2x.png"
+                        alt="インスタグラムロゴ"
+                /></a>
+                <a href="https://www.facebook.com/ygvipmai/"
+                    ><img
+                        src="2x/2x/フッター (2)@2x.png"
+                        alt="フェイスブックロゴ"
+                /></a>
+                <a href="https://twitter.com/mai1988kr/with_replies"
+                    ><img src="2x/2x/フッター@2x.png" alt="ツイッターロゴ"
+                /></a>
             </div>
-            <p>©️Mai Kadono</p>
+            <p class="copy">©️Mai Kadono</p>
         </footer>
     </body>
 </html>
