@@ -29,7 +29,7 @@ body {
     justify-content: center;
 }
 .header_nav_list li {
-    margin-right: 170px;
+    margin-right: 17%;
     font-size: 4rem;
 }
 
@@ -58,8 +58,10 @@ body {
     margin: 0 auto;
     width: 84px;
     top: 1115px;
-    left: 49%;
+    left: 48%;
 }
+
+/* メインタイトル h1 */
 
 .fv_border {
     border-width: 5rem 0rem 0rem 0rem;
@@ -235,9 +237,9 @@ textarea {
 .send_bt {
     border: 3px solid #333;
     background-color: #ffffff;
-    width: 10%;
+    width: 12%;
     margin: 1rem 0 5rem;
-    padding: 4px 4px;
+    padding: 5px 5px;
     border-radius: 5px;
     height: 5.2rem;
 }
@@ -255,32 +257,37 @@ footer {
     );
     padding-bottom: 55px;
     margin-top: 225px;
-}
-
-footer img {
-    width: 900px;
-    margin-left: 2.6%;
+    height: 320px;
 }
 
 .tankyou {
     font-size: 17.4rem;
     color: #333;
     margin-left: 2.6%;
+    background: url(image/thankyou@2x.png) no-repeat left center/contain;
 }
 
 .snsicon {
     display: flex;
-    margin-left: 79%;
+    margin-left: 75%;
     margin-bottom: -30px;
 }
 
 .snsicon img {
-    width: 50px;
-    justify-content: space-between;
+    width: 5rem;
     margin-right: 5rem;
 }
 
 .copy {
     font-size: 3.5rem;
-    margin-left: 90%;
+}
+
+.to_top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+
+.to_top img {
+    width: 100px;
 }

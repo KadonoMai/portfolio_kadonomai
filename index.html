@@ -19,7 +19,7 @@
                 <p class="logo">
                     <a href="index.html">
                         <img
-                            src="2x/2x/name_S@2x.png"
+                            src="image/name_S@2x.png"
                             alt="MaiKadono_imgSmall"
                         />
                     </a>
@@ -37,19 +37,21 @@
                 <p class="title_text">Graphic & Web Designer</p>
                 <hr class="fv_border" />
                 <h1>
-                    <img src="2x/2x/name_B@2x.png" alt="MaiKadono_imgBig" />
+                    <img src="image/name_B@2x.png" alt="MaiKadono_imgBig" />
                 </h1>
             </div>
 
             <picture class="octagon">
                 <source
-                    srcset="2x/2x/sp_octadon@2x.png"
+                    srcset="image/sp_octadon@2x.png"
                     media="(max_width:767px)"
                 />
-                <img src="2x/2x/octagon@2x.png" alt="Webサイト作成画像" />
+                <img src="image/octagon@2x.png" alt="Webサイト作成画像" />
             </picture>
             <div class="triangle">
-                <img src="2x/2x/triangle@2x.png" alt="scroll" />
+                <a href="#About"
+                    ><img src="image/triangle@2x.png" alt="scroll"
+                /></a>
             </div>
         </header>
 
@@ -64,7 +66,7 @@
                     </div>
                     <div class="about_inner">
                         <img
-                            src="2x/2x/Myphoto@2x-100.jpg"
+                            src="image/Myphoto@2x-100.jpg"
                             alt="自己紹介用写真"
                         />
                         <p>
@@ -80,7 +82,7 @@
                     <div class="view_more view_more_about">
                         <a href="about.html">
                             <img
-                                src="2x/2x/viewmore@2x.png"
+                                src="image/viewmore@2x.png"
                                 alt="水彩テクスチャ"
                             />
                             <p>view more</p>
@@ -100,11 +102,11 @@
                     <figure class="work_top">
                         <picture>
                             <source
-                                srcset="2x/2x/pc_work_website@2x-100.jpg"
+                                srcset="image/sp_work_website@2x-100.jpg"
                                 media="(max_width:767px)"
                             />
                             <img
-                                src="2x/2x/top_pc@2x-100.jpg"
+                                src="image/top_pc@2x-100.jpg"
                                 alt="Webサイト作成画像"
                             />
                         </picture>
@@ -117,11 +119,11 @@
                         <figure class="work_first">
                             <picture>
                                 <source
-                                    srcset="2x/2x/sp_work_graphic@2x-100.jpg"
+                                    srcset="image/sp_work_graphic@2x-100.jpg"
                                     media="(max_width:767px)"
                                 />
                                 <img
-                                    src="2x/2x/top_pc_night museum@2x-100.jpg"
+                                    src="image/top_pc_night museum@2x-100.jpg"
                                     alt="チラシ作成参考画像"
                                 />
                             </picture>
@@ -133,11 +135,11 @@
                         <figure class="work_second">
                             <picture>
                                 <source
-                                    srcset="2x/2x/sp_work_meisi@2x-100.jpg"
+                                    srcset="image/sp_work_meisi@2x-100.jpg"
                                     media="(max_width:767px)"
                                 />
                                 <img
-                                    src="2x/2x/top_pc_meiisi@2x-100.jpg"
+                                    src="image/top_pc_meiisi@2x-100.jpg"
                                     alt="名刺作成参考画像"
                                 />
                             </picture>
@@ -149,7 +151,7 @@
                     </div>
                     <!-- view_more -->
                     <div class="view_more">
-                        <img src="2x/2x/viewmore@2x.png" alt="水彩テクスチャ" />
+                        <img src="image/viewmore@2x.png" alt="水彩テクスチャ" />
                         <p>view more</p>
                         <div class="stickarrow"></div>
                     </div>
@@ -230,31 +232,45 @@
                                     placeholder="本文"
                                 ></textarea>
                             </li>
-                            <li><input type="submit" class="send_bt" /></li>
+                            <li>
+                                <input
+                                    type="submit"
+                                    class="send_bt"
+                                    value="Send"
+                                />
+                            </li>
                         </ul>
                     </form>
                 </section>
             </div>
         </main>
         <footer>
-            <img src="2x/2x/thank you@2x.png" alt="thankyouイメージ" />
+            <!-- <img src="2x/2x/thank you@2x.png" alt="thankyouイメージ" /> -->
             <p class="tankyou">Thank you</p>
             <div class="snsicon">
                 <a href="https://www.instagram.com/maaai_1988/">
-                    <img
-                        src="2x/2x/フッター (3)@2x.png"
-                        alt="インスタグラムロゴ"
+                    <img src="image/Instagram.png" alt="インスタグラムロゴ"
                 /></a>
                 <a href="https://www.facebook.com/ygvipmai/"
-                    ><img
-                        src="2x/2x/フッター (2)@2x.png"
-                        alt="フェイスブックロゴ"
+                    ><img src="image/facebook.png" alt="フェイスブックロゴ"
                 /></a>
                 <a href="https://twitter.com/mai1988kr/with_replies"
-                    ><img src="2x/2x/フッター@2x.png" alt="ツイッターロゴ"
+                    ><img src="image/Twitter.png" alt="ツイッターロゴ"
                 /></a>
+                <p class="copy">©️Mai Kadono</p>
             </div>
-            <p class="copy">©️Mai Kadono</p>
+            <p class="to_top">
+                <a href="#header">
+                    <img src="image/to_top_bt@2x.png" alt="TOPへボタン" />
+                </a>
+            </p>
         </footer>
+        <!-- <script>
+            $(function(){ $('a[href^="#"]').click(function(){ let speed = 500; let
+            href= $(this).attr("href"); let target = $(href == "#" || href == "" ?
+            'html' : href); let position = target.offset().top; $("html,
+            body").animate({scrollTop:position}, speed, "swing"); return false; });
+            });
+        </script> -->
     </body>
 </html>
