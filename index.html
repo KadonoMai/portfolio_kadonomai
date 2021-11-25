@@ -14,6 +14,7 @@
     </head>
 
     <body>
+        <!-- ここからヘッダー -->
         <header id="header">
             <div class="header_container">
                 <p class="logo">
@@ -151,9 +152,14 @@
                     </div>
                     <!-- view_more -->
                     <div class="view_more">
-                        <img src="image/viewmore@2x.png" alt="水彩テクスチャ" />
-                        <p>view more</p>
-                        <div class="stickarrow"></div>
+                        <a href="work.html">
+                            <img
+                                src="image/viewmore@2x.png"
+                                alt="水彩テクスチャ"
+                            />
+                            <p>view more</p>
+                            <div class="stickarrow"></div>
+                        </a>
                     </div>
                 </section>
                 <!-- contact_お問い合わせ -->
@@ -257,7 +263,9 @@
                 <a href="https://twitter.com/mai1988kr/with_replies"
                     ><img src="image/Twitter.png" alt="ツイッターロゴ"
                 /></a>
-                <p class="copy">©️Mai Kadono</p>
+                <div class="copy">
+                    <p><small> ©️Mai Kadono</small></p>
+                </div>
             </div>
             <p class="to_top">
                 <a href="#header">
@@ -265,12 +273,12 @@
                 </a>
             </p>
         </footer>
-        <!-- <script>
+        <script>
             $(function(){ $('a[href^="#"]').click(function(){ let speed = 500; let
             href= $(this).attr("href"); let target = $(href == "#" || href == "" ?
             'html' : href); let position = target.offset().top; $("html,
             body").animate({scrollTop:position}, speed, "swing"); return false; });
             });
-        </script> -->
+        </script>
     </body>
 </html>

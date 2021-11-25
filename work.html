@@ -14,11 +14,9 @@
     </head>
 
     <body>
-        <!-- ここからヘッダー -->
         <header id="header">
             <div class="header_container">
                 <p class="logo">
-                    <!-- FVへのリンク -->
                     <a href="index.html">
                         <img
                             src="image/name_S@2x.png"
@@ -37,85 +35,66 @@
             </div>
         </header>
 
-        <main class="about_main">
+        <main class="work_main">
             <div class="container">
-                <!-- about_わたしについて -->
-                <section class="About" id="About">
+                <!-- work_仕事 -->
+                <section class="Work" id="Work">
                     <div class="title_wrap">
-                        <h2>About</h2>
+                        <h2>Work</h2>
                         <hr class="title_border" />
-                        <h3>私について</h3>
+                        <h3>仕事</h3>
                     </div>
-                    <div class="about_inner_sbu">
-                        <p>
-                            わんぱくな男の子を育てるママWebデザイナー<br />
-                            1988年生まれ名古屋市出身。岐阜県多治見市在住<br />
-                            高校卒業後、事務職として5年勤めたのち<br />
-                            海外へ約1年語学留学。日本語教師の資格取得<br />
-                            帰国後はサービス業、歯科助手として働く。<br />
-                            2020年第一子出産。産休、育休を経て働き方を見つめ直す
-                            スキルアップが必要と感じ学び始め、オンラインスクールをきっかけにデザインに出会う。日常に溢れるデザインの奥深さを知り、本格的にデザインを学び始める。フリーランスとして活動しながらデザインとマーケティングを勉強中。海外で培ったコミュニケーション能力を活かし、日々挑戦し続けます。
-                        </p>
-                    </div>
-                </section>
 
-                <!-- skill_できること -->
-                <section class="Skill" id="Skill">
-                    <div class="title_wrap">
-                        <h2>Skill</h2>
-                        <hr class="title_border" />
-                        <h3>出来ること</h3>
-                    </div>
-                    <div class="skill_wrap">
-                        <figure class="skill_wrap_smallwrap">
+                    <div class="work_sub_column">
+                    <figure class="work_img">
+                        <picture>
+                            <source
+                                srcset="image/sp_work_website@2x-100.jpg"
+                                media="(max_width:767px)"
+                            />
+                            <img
+                                src="image/pc_work_website@2x-100.jpg"
+                                alt="Webサイト作成画像"
+                            />
+                        </picture>
+                        <figcaption class="work_figcaption">
+                            <p>制作期間:コーディング 3週間</p>
+                            <p>HTML/CSS/JavaScript</p>
+                        </figcaption>
+                    </figure>
+                        <figure class="work_img">
                             <picture>
+                                <source
+                                    srcset="image/sp_work_graphic@2x-100.jpg"
+                                    media="(max_width:767px)"
+                                />
                                 <img
-                                    src="image/graphicdesign@2x-100.jpg"
-                                    alt="グラフィックデザインイメージ画像"
+                                    src="image/pc_work_graphic@2x-100.jpg"
+                                    alt="チラシ作成参考画像"
                                 />
                             </picture>
-                            <figcaption class="figcaption">
-                                <h4>Graphic Design</h4>
-                                <p>
-                                    伝えたい情報をわかりやすく瞬時に伝え、ユーザーの記憶に残る効果的なデザインをご提案します。
-                                </p>
+                            <figcaption class="work_figcaption">
+                                <p>制作期間:3日</p>
+                                <p>illustrator</p>
                             </figcaption>
                         </figure>
-                        <figure class="skill_wrap_smallwrap">
+                        <figure class="work_img">
                             <picture>
+                                <source
+                                    srcset="image/sp_work_meisi@2x-100.jpg"
+                                    media="(max_width:767px)"
+                                />
                                 <img
-                                    src="image/webdesign@2x-100.jpg"
-                                    alt="ウェブデザインイメージ画像"
+                                    src="image/pc_work_meisi@2x-100.jpg"
+                                    alt="名刺作成参考画像"
                                 />
                             </picture>
-                            <figcaption class="figcaption">
-                                <h4>Web Design</h4>
-                                <p>
-                                    見た目と機能性を兼ね備え、ユーザー目線を忘れず使いやすいWebデザインをご提案します。
-                                </p>
+                            <figcaption class="work_figcaption">
+                                <p>制作期間:3日</p>
+                                <p>Photoshop</p>
                             </figcaption>
                         </figure>
-                        <figure class="skill_wrap_smallwrap">
-                            <picture>
-                                <img
-                                    src="image/cording@2x-100.jpg"
-                                    alt="コーディングイメージ画像"
-                                />
-                            </picture>
-                            <figcaption class="figcaption">
-                                <h4>Coding</h4>
-                                <p>
-                                    HTML、CSS、jQueryなどを使い操作しやすいサイトを作ることを意識してコーディングします。
-                                </p>
-                            </figcaption>
-                        </figure>
-                    </div>
-                    <img
-                        class="adobe"
-                        src="image/skill@2x.png"
-                        alt="スキル一覧イメージ"
-                    />
-                </section>
+                </div>
                 <!-- contact_お問い合わせ -->
                 <section class="Contact" id="Contact">
                     <div class="title_wrap">
@@ -138,7 +117,6 @@
                 </section>
             </div>
         </main>
-
         <footer>
             <!-- <img src="2x/2x/thank you@2x.png" alt="thankyouイメージ" /> -->
             <p class="tankyou">Thank you</p>
