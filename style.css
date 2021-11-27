@@ -195,11 +195,17 @@ main .container h3 {
     display: none;
 }
 
+.work_img {
+    margin-bottom: 80px;
+}
+
+/* work始めにくる横長のHP制作イメージ */
 .work_top img {
     width: 100%;
     margin-bottom: 10px;
 }
 
+/* 下2枚、横並びのイメージ */
 .work_sub {
     display: flex;
 }
@@ -217,10 +223,12 @@ main .container h3 {
     justify-content: flex-end;
 }
 
+/* 制作期間、使用ツール説明など */
 .work_figcaption p {
     font-size: 1.2rem;
 }
 
+/* workのviewmoreはセンター揃え */
 .view_more {
     margin-top: 4.5rem;
 }
@@ -251,6 +259,24 @@ main .container h3 {
     font-size: 3.5rem;
     line-height: 1.75;
 }
+
+/* デザインカフェへのボタン */
+.cafe_btn {
+    color: #fff;
+    background-color: #333;
+    width: 50%;
+    text-align: center;
+}
+
+.cafe_btn:hover {
+    color: #ffffff;
+    background-color: #ffff78;
+}
+
+.cafe_btn_radius {
+    border-radius: 100vh;
+}
+
 /* ーーーーーーーskill_subーーーーーーー */
 
 .skill {
@@ -360,7 +386,7 @@ footer {
     margin-right: 5rem;
 }
 
-.copy small {
+.copy {
     font-size: 3.5rem;
 }
 

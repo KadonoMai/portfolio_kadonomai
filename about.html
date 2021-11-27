@@ -11,6 +11,23 @@
         />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
+        <!-- ＃リンクのスムーススクロール -->
+        <script>
+            $(function () {
+                $('a[href^="#"]').click(function () {
+                    let speed = 500
+                    let href = $(this).attr("href")
+                    let target = $(href == "#" || href == "" ? "html" : href)
+                    let position = target.offset().top
+                    $("html, body").animate(
+                        { scrollTop: position },
+                        speed,
+                        "swing"
+                    )
+                    return false
+                })
+            })
+        </script>
     </head>
 
     <body>
@@ -29,9 +46,9 @@
                 <nav class="header_nav_list">
                     <ul>
                         <li><a href="#About">About</a></li>
-                        <li><a href="#Work">Work</a></li>
+                        <li><a href="index.html#Work">Work</a></li>
                         <li><a href="#Blog">Blog</a></li>
-                        <li><a href="#Contact">Contact</a></li>
+                        <li><a href="index.html#Contact">Contact</a></li>
                     </ul>
                 </nav>
             </div>
@@ -129,7 +146,7 @@
                             src="image/contact_link.png"
                             alt="リンク背景イメージ"
                         />
-                        <a href="index.html/Contact">
+                        <a href="index.html#Contact">
                             <p>
                                 お仕事のご相談やご依頼など、お気軽にご連絡ください！
                             </p>
@@ -160,12 +177,5 @@
                 </a>
             </p>
         </footer>
-        <!-- <script>
-            $(function(){ $('a[href^="#"]').click(function(){ let speed = 500; let
-            href= $(this).attr("href"); let target = $(href == "#" || href == "" ?
-            'html' : href); let position = target.offset().top; $("html,
-            body").animate({scrollTop:position}, speed, "swing"); return false; });
-            });
-        </script> -->
     </body>
 </html>

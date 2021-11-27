@@ -11,6 +11,23 @@
         />
         <link rel="stylesheet" href="reset.css" />
         <link rel="stylesheet" href="style.css" />
+        <!-- ＃リンクのスムーススクロール -->
+        <script>
+            $(function () {
+                $('a[href^="#"]').click(function () {
+                    let speed = 400
+                    let href = $(this).attr("href")
+                    let target = $(href == "#" || href == "" ? "html" : href)
+                    let position = target.offset().top
+                    $("html, body").animate(
+                        { scrollTop: position },
+                        speed,
+                        "swing"
+                    )
+                    return false
+                })
+            })
+        </script>
     </head>
 
     <body>
@@ -25,6 +42,15 @@
                         />
                     </a>
                 </p>
+
+                <div id="#hamberger">
+                    <p class="btn_gnav">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </p>
+                </div>
+
                 <nav class="header_nav_list">
                     <ul>
                         <li><a href="#About">About</a></li>
@@ -100,55 +126,64 @@
                         <h3>仕事</h3>
                     </div>
 
-                    <figure class="work_top">
-                        <picture>
-                            <source
-                                srcset="image/sp_work_website@2x-100.jpg"
-                                media="(max_width:767px)"
-                            />
-                            <img
-                                src="image/top_pc@2x-100.jpg"
-                                alt="Webサイト作成画像"
-                            />
-                        </picture>
-                        <figcaption class="figcaption">
-                            <p>制作期間:コーディング 3週間</p>
-                            <p>HTML/CSS/JavaScript</p>
-                        </figcaption>
-                    </figure>
+                    <a href="work.html#work_one"
+                        ><figure class="work_top">
+                            <picture>
+                                <source
+                                    srcset="image/sp_work_website@2x-100.jpg"
+                                    media="(max_width:767px)"
+                                />
+                                <img
+                                    src="image/top_pc@2x-100.jpg"
+                                    alt="Webサイト作成画像"
+                                />
+                            </picture>
+                            <figcaption class="figcaption">
+                                <p>制作期間:コーディング 3週間</p>
+                                <p>HTML/CSS/JavaScript</p>
+                            </figcaption>
+                        </figure>
+                    </a>
                     <div class="work_sub">
-                        <figure class="work_first">
-                            <picture>
-                                <source
-                                    srcset="image/sp_work_graphic@2x-100.jpg"
-                                    media="(max_width:767px)"
-                                />
-                                <img
-                                    src="image/top_pc_night museum@2x-100.jpg"
-                                    alt="チラシ作成参考画像"
-                                />
-                            </picture>
-                            <figcaption class="figcaption">
-                                <p>制作期間:デザイン 3日</p>
-                                <p>illustrator</p>
-                            </figcaption>
-                        </figure>
-                        <figure class="work_second">
-                            <picture>
-                                <source
-                                    srcset="image/sp_work_meisi@2x-100.jpg"
-                                    media="(max_width:767px)"
-                                />
-                                <img
-                                    src="image/top_pc_meiisi@2x-100.jpg"
-                                    alt="名刺作成参考画像"
-                                />
-                            </picture>
-                            <figcaption class="figcaption">
-                                <p>制作期間:デザイン 3日</p>
-                                <p>Photoshop</p>
-                            </figcaption>
-                        </figure>
+                        <a href="work.html#work_two"
+                            ><figure class="work_first">
+                                <picture>
+                                    <source
+                                        srcset="
+                                            image/sp_work_graphic@2x-100.jpg
+                                        "
+                                        media="(max_width:767px)"
+                                    />
+                                    <img
+                                        src="image/top_pc_night museum@2x-100.jpg"
+                                        alt="チラシ作成参考画像"
+                                    />
+                                </picture>
+                                <figcaption class="figcaption">
+                                    <p>制作期間:デザイン 3日</p>
+                                    <p>illustrator</p>
+                                </figcaption>
+                            </figure>
+                        </a>
+
+                        <a href="work.html#work_three"
+                            ><figure class="work_second">
+                                <picture>
+                                    <source
+                                        srcset="image/sp_work_meisi@2x-100.jpg"
+                                        media="(max_width:767px)"
+                                    />
+                                    <img
+                                        src="image/top_pc_meiisi@2x-100.jpg"
+                                        alt="名刺作成参考画像"
+                                    />
+                                </picture>
+                                <figcaption class="figcaption">
+                                    <p>制作期間:デザイン 3日</p>
+                                    <p>Photoshop</p>
+                                </figcaption>
+                            </figure>
+                        </a>
                     </div>
                     <!-- view_more -->
                     <div class="view_more">
@@ -264,7 +299,7 @@
                     ><img src="image/Twitter.png" alt="ツイッターロゴ"
                 /></a>
                 <div class="copy">
-                    <p><small> ©️Mai Kadono</small></p>
+                    <p>©️Mai Kadono</p>
                 </div>
             </div>
             <p class="to_top">
@@ -273,12 +308,5 @@
                 </a>
             </p>
         </footer>
-        <script>
-            $(function(){ $('a[href^="#"]').click(function(){ let speed = 500; let
-            href= $(this).attr("href"); let target = $(href == "#" || href == "" ?
-            'html' : href); let position = target.offset().top; $("html,
-            body").animate({scrollTop:position}, speed, "swing"); return false; });
-            });
-        </script>
     </body>
 </html>
