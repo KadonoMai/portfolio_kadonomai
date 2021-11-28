@@ -5,6 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kadonomai 愛知岐阜でフリーランスのWeb制作をしています。</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <meta
             name="discription"
             content="名古屋、岐阜で活動中のWebフリーランス角野麻衣のポートフォリオサイトです。"
@@ -49,6 +50,20 @@
                         <li><a href="index.html#Contact">Contact</a></li>
                     </ul>
                 </nav>
+                <!-- スマホメニュー -->
+                <nav class="sp_nav">
+                    <ul>
+                        <li><a href="#About">About</a></li>
+                        <li><a href="#Work">Work</a></li>
+                        <li><a href="#Blog">Blog</a></li>
+                        <li><a href="#Contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <!-- ハンバーガーメニュー用のspan -->
+                <div class="sp_menu_btn">
+                    <span></span>
+                </div>
+                
             </div>
         </header>
 
@@ -161,5 +176,14 @@
                 </a>
             </p>
         </footer>
+
+        <script>
+            $(function () {
+                $(".sp_menu_btn").click(function () {
+                    $(".sp_menu_btn").toggleClass("open")
+                    $(".sp_nav").fadeToggle()
+                })
+            })
+        </script>
     </body>
 </html>
