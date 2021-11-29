@@ -123,19 +123,19 @@ main .container h3 {
 
 .about_inner {
     display: flex;
-    margin-bottom: 70px;
+    margin: 0 auto 70px;
 }
 
 .about_inner img {
-    width: 36%;
-    height: 36%;
-    margin-right: 3%;
+    width: 50%;
+    height: 50%;
+    margin-right: 5%;
 }
 
 .about_inner p {
-    font-size: 3.5rem;
+    font-size: 3.4rem;
     line-height: 1.75;
-    width: 60%;
+    width: 50%;
     font-feature-settings: "palt";
 }
 
@@ -377,17 +377,17 @@ footer {
 
 .snsicon {
     display: flex;
-    margin-left: 75%;
+    margin-left: 60%;
     margin-bottom: -30px;
 }
 
 .snsicon img {
-    width: 5rem;
-    margin-right: 5rem;
+    width: 4rem;
+    margin-right: 4rem;
 }
 
-.copy {
-    font-size: 3.5rem;
+.copy p {
+    font-size: 2.5rem;
 }
 
 /* TOPへボタン */
@@ -399,7 +399,7 @@ footer {
 }
 
 .to_top img {
-    width: 125px;
+    width: 100px;
 }
 
 /* ハンバーガーメニュー */
@@ -423,6 +423,8 @@ footer {
         right: 10px;
         top: 130px;
         height: 30px;
+        z-index: 10000;
+        cursor: pointer;
     }
 
     .sp_menu_btn span {
@@ -475,6 +477,7 @@ footer {
         height: 100vh;
         background: #ffff78;
         width: 100%;
+        z-index: 9999;
     }
 
     .sp_nav ul {
@@ -488,7 +491,7 @@ footer {
         color: #333;
         text-align: center;
         font-size: 8rem;
-        padding: 20px 0s;
+        margin: 1em 0;
     }
 
     /* 8角形 */
@@ -627,33 +630,101 @@ footer {
     }
 
     .snsicon img {
-        width: 4rem;
-        margin-right: 4rem;
+        width: 3rem;
+        margin-right: 3rem;
     }
 
-    .copy {
+    .copy p {
         font-size: 2rem;
     }
 
     .to_top img {
-        width: 100px;
+        width: 80px;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .header_container_second {
-        margin-top: 400px;
-        text-align: center;
+    .sp_menu_btn {
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 110px;
+        height: 30px;
+    }
+
+    .sp_menu_btn span {
+        background-color: #333;
+        width: 50px;
+        height: 5px;
+        display: block;
         position: relative;
+        top: 17px;
+        transition: 0.3s;
+    }
+
+    .sp_menu_btn span::before,
+    .sp_menu_btn span::after {
+        content: "";
+        width: 50px;
+        height: 5px;
+        display: block;
+        background-color: #333;
+        position: absolute;
+        transition: 0.3s;
+    }
+
+    .sp_menu_btn span::before {
+        bottom: 20px;
+    }
+
+    .sp_menu_btn span::after {
+        top: 20px;
+    }
+
+    .opem span {
+        background: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+
+    .open span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
+    .sp_nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        background: #ffff78;
+        width: 100%;
+    }
+
+    .sp_nav ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
+
+    .sp_nav li {
+        color: #333;
+        text-align: center;
+        font-size: 5rem;
+        margin: 2rem 0;
     }
 
     /* 8角形 */
 
     .octagon img {
-        width: 600px;
+        width: 375px;
         position: absolute;
         left: 50%;
-        top: 640px;
+        top: 480px;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -664,28 +735,33 @@ footer {
     .triangle img {
         position: absolute;
         margin: 0 auto;
-        width: 45px;
-        top: 850px;
+        width: 30px;
+        top: 600px;
         left: 50%;
         transform: translateX(-50%);
     }
 
     /* メインタイトル h1 */
 
+    .header_container_second {
+        margin-top: 275px;
+        position: relative;
+    }
+
     .fv_border {
-        border-width: 5rem 0rem 0rem 0rem;
+        border-width: rem 0rem 0rem 0rem;
         border-style: solid;
         border-color: #ffff78;
     }
 
     .title_text {
         font-size: 2.6rem;
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
 
     .header_container_second h1 img {
-        width: 500px;
-        margin-top: -75px;
+        width: 330px;
+        margin-top: -50px;
     }
 
     /* ーーーーーーーcontact お問い合わせーーーーーーー */
@@ -728,11 +804,11 @@ footer {
     }
 
     .snsicon img {
-        width: 3rem;
+        width: 2rem;
         margin-right: 2em;
     }
 
-    .copy {
+    .copy p {
         font-size: 1rem;
     }
 
