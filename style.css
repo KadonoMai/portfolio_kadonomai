@@ -144,10 +144,6 @@ main .container h3 {
     margin: 0;
 }
 
-.about_inner_sbu {
-    width: 1000px;
-}
-
 .about_inner_sbu p {
     font-size: 3.9rem;
     line-height: 1.75;
@@ -223,11 +219,6 @@ main .container h3 {
     justify-content: flex-end;
 }
 
-/* 制作期間、使用ツール説明など */
-.work_figcaption p {
-    font-size: 1.2rem;
-}
-
 /* workのviewmoreはセンター揃え */
 .view_more {
     margin-top: 4.5rem;
@@ -255,6 +246,7 @@ main .container h3 {
     margin: 0 auto;
 }
 
+/* 制作期間、使用ツール説明など */
 .work_figcaption p {
     font-size: 3.5rem;
     line-height: 1.75;
@@ -277,6 +269,10 @@ main .container h3 {
     border-radius: 100vh;
 }
 
+.cafe_btn p {
+    font-size: 2.5rem;
+}
+
 /* ーーーーーーーskill_subーーーーーーー */
 
 .skill {
@@ -289,7 +285,7 @@ main .container h3 {
 }
 
 .skill_wrap_smallwrap {
-    width: 300px;
+    width: 33%;
 }
 
 .skill_wrap_smallwrap img {
@@ -310,9 +306,11 @@ main .container h3 {
     font-feature-settings: "palt";
 }
 
-.adobe {
-    width: 19%;
-    margin-top: 30px;
+.skill_wrap_smallwrap img.adobe {
+    width: 50%;
+    height: 50px;
+    border-radius: 0%;
+    justify-self: start;
 }
 /* ーーーーーーーcontact お問い合わせーーーーーーー */
 
@@ -338,7 +336,8 @@ textarea {
     margin: 1rem 0 5rem;
     padding: 5px 5px;
     border-radius: 5px;
-    height: 5.2rem;
+    height: 6rem;
+    text-align: center;
 }
 
 .contact_link a:hover {
@@ -350,7 +349,8 @@ textarea {
 
 .contact_link p {
     font-size: 3.5rem;
-    margin: -9rem 3rem 0rem;
+    text-align: center;
+    margin-top: -90px;
 }
 
 /* ーーーーーーーfooterーーーーーーー */
@@ -490,14 +490,14 @@ footer {
     .sp_nav li {
         color: #333;
         text-align: center;
-        font-size: 8rem;
+        font-size: 5rem;
         margin: 1em 0;
     }
 
     /* 8角形 */
 
     .octagon img {
-        width: 800px;
+        width: 750px;
         position: absolute;
         left: 50%;
         top: 760px;
@@ -541,18 +541,6 @@ footer {
         padding-top: 200px;
     }
 
-    .about_inner {
-        display: flex;
-        margin-bottom: 30px;
-    }
-
-    .about_inner p {
-        font-size: 2.5rem;
-        line-height: 1.6;
-        width: 43%;
-        font-feature-settings: "palt";
-    }
-
     /* view_more  */
 
     .view_more {
@@ -560,10 +548,6 @@ footer {
         width: 290px;
         margin: 0 auto;
         margin-top: 3rem;
-    }
-
-    .view_more_about {
-        margin-right: 0;
     }
 
     .view_more img {
@@ -589,35 +573,98 @@ footer {
         left: -2%;
     }
 
-    /* ーーーーーーーcontact お問い合わせーーーーーーー */
+    /* about_私について */
 
-    input,
-    textarea {
-        border: 3px solid #333;
-        background-color: #ffffff;
-        width: 100%;
-        margin: 1rem 0 3rem;
-        padding: 4px 4px;
-        border-radius: 5px;
-        height: 6rem;
+    .about_inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
     }
 
-    .Contact li {
+    .about_inner img {
+        width: 30%;
+        height: 30%;
+        margin: 0 auto;
+    }
+
+    .about_inner p {
+        font-size: 2.1rem;
+        line-height: 1.75;
+        width: 50%;
+        margin: 30px auto 10px;
+        font-feature-settings: "palt";
+    }
+
+    .about_inner_sbu p {
         font-size: 3rem;
+        line-height: 1.6;
+        font-feature-settings: "palt";
+    }
+
+    /* work_仕事 */
+
+    .work_top.work_sub {
+        max-width: 100%;
+        width: 300px;
+    }
+
+    .Work .figcaption {
+        display: block;
+    }
+
+    .work_second {
+        display: none;
+    }
+
+    /* スキル＿出来ること */
+
+    .skill_wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skill_wrap_smallwrap {
+        max-width: 100%;
+        width: 300px;
+        margin-bottom: 35px;
+    }
+
+    .skill_wrap_smallwrap img.adobe {
+        width: 25%;
+        height: 20px;
+        border-radius: 0%;
+    }
+
+    .work_figcaption p {
+        font-size: 2.5rem;
+        line-height: 1.75;
+    }
+
+    .cafe_btn p {
+        font-size: 2rem;
+    }
+
+    /* ーーーーーーーcontact お問い合わせーーーーーーー */
+
+    .contact_link p {
+        font-size: 2.5rem;
+        margin-top: -75px;
     }
 
     .send_bt {
         border: 3px solid #333;
         background-color: #ffffff;
-        width: 13%;
+        width: 15%;
         margin: 1rem 0 3rem;
         padding: 5px 5px;
         border-radius: 5px;
-        height: 4rem;
+        height: 6rem;
+        text-align: center;
     }
 
     .tankyou {
-        font-size: 12rem;
+        font-size: 10rem;
         color: #333;
         margin-left: 2.6%;
         background: url(image/thankyou@2x.png) no-repeat left center/contain;
@@ -630,12 +677,12 @@ footer {
     }
 
     .snsicon img {
-        width: 3rem;
-        margin-right: 3rem;
+        width: 2rem;
+        margin-right: 2rem;
     }
 
     .copy p {
-        font-size: 2rem;
+        font-size: 3rem;
     }
 
     .to_top img {
@@ -721,10 +768,10 @@ footer {
     /* 8角形 */
 
     .octagon img {
-        width: 375px;
+        width: 270px;
         position: absolute;
         left: 50%;
-        top: 480px;
+        top: 380px;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -736,7 +783,7 @@ footer {
         position: absolute;
         margin: 0 auto;
         width: 30px;
-        top: 600px;
+        top: 460px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -744,27 +791,133 @@ footer {
     /* メインタイトル h1 */
 
     .header_container_second {
-        margin-top: 275px;
+        margin-top: 203px;
         position: relative;
     }
 
     .fv_border {
-        border-width: rem 0rem 0rem 0rem;
+        border-width: 2.5rem 0rem 0rem 0rem;
         border-style: solid;
         border-color: #ffff78;
     }
 
     .title_text {
-        font-size: 2.6rem;
+        font-size: 2rem;
         margin-bottom: 15px;
     }
 
     .header_container_second h1 img {
-        width: 330px;
-        margin-top: -50px;
+        width: 260px;
+        margin-top: -40px;
     }
 
-    /* ーーーーーーーcontact お問い合わせーーーーーーー */
+    /* コンテンツタイトル */
+
+    .main {
+        margin-top: 150px;
+    }
+
+    main .container h2 {
+        font-size: 3rem;
+    }
+
+    .title_border {
+        height: 7px;
+        background-color: #ffff78;
+        border: none;
+        border-radius: 20px;
+        width: 10%;
+        margin: auto;
+    }
+
+    main .container h3 {
+        font-size: 4rem;
+        margin-top: 20px;
+    }
+
+    .title_wrap {
+        text-align: center;
+        margin: 0 auto 50px;
+        padding-top: 150px;
+    }
+
+    .main .container h3 {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+
+    /* view_more  */
+
+    .view_more {
+        position: relative;
+        width: 290px;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .view_more_about {
+        margin-right: 0;
+    }
+
+    .view_more img {
+        width: 60%;
+    }
+
+    .view_more p {
+        font-size: 2rem;
+        position: absolute;
+        top: 45%;
+        height: 50%;
+        padding-left: 50px;
+    }
+
+    .stickarrow {
+        width: 55%;
+        height: 40px;
+        border-bottom: 1px solid #333;
+        border-right: 1px solid #333;
+        transform: skew(45deg);
+        position: absolute;
+        top: 45%;
+        left: 10%;
+    }
+
+    .about_inner {
+        margin: 0 auto 30px;
+    }
+
+    .about_inner p {
+        font-size: 1.7rem;
+        line-height: 1.6;
+        width: 80%;
+        font-feature-settings: "palt";
+    }
+
+    .about_inner_sbu p {
+        font-size: 2rem;
+        line-height: 1.3;
+        font-feature-settings: "palt";
+    }
+
+    .work_top {
+        margin-bottom: 30px;
+    }
+
+    .figcaption p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .work_figcaption p {
+        font-size: 1.8rem;
+        line-height: 1.5;
+    }
+
+    .cafe_btn p {
+        font-size: 1rem;
+    }
+
+    /* contact お問い合わせ */
 
     input,
     textarea {
@@ -778,13 +931,19 @@ footer {
     }
 
     .Contact li {
-        font-size: 2rem;
+        font-size: 1rem;
+    }
+
+    .contact_link p {
+        font-size: 0.5rem;
+        margin-top: -25px;
     }
 
     .send_bt {
+        text-align: center;
         border: 3px solid #333;
         background-color: #ffffff;
-        width: 10%;
+        width: 25%;
         margin: 1rem 0 3rem;
         padding: 5px 5px;
         border-radius: 5px;
@@ -792,20 +951,24 @@ footer {
     }
 
     .tankyou {
-        font-size: 10rem;
+        font-size: 3rem;
         color: #333;
         margin-left: 2.6%;
         background: url(image/thankyou@2x.png) no-repeat left center/contain;
     }
 
+    footer {
+        margin-top: 100px;
+    }
+
     .snsicon {
         display: flex;
-        margin-left: 58%;
+        margin-left: 50%;
     }
 
     .snsicon img {
-        width: 2rem;
-        margin-right: 2em;
+        width: 1rem;
+        margin-right: 1rem;
     }
 
     .copy p {
