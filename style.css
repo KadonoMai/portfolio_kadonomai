@@ -413,6 +413,8 @@ footer {
 }
 
 @media screen and (max-width: 1200px) {
+    /* スマホ版メニュー  */
+
     .header_nav_list {
         display: none;
     }
@@ -456,7 +458,7 @@ footer {
         top: 20px;
     }
 
-    .opem span {
+    .open span {
         background: transparent;
     }
 
@@ -691,7 +693,7 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
-    .sp_menu_btn {
+    /* .sp_menu_btn {
         display: block;
         position: absolute;
         right: 10px;
@@ -763,7 +765,7 @@ footer {
         text-align: center;
         font-size: 5rem;
         margin: 2rem 0;
-    }
+    } */
 
     /* 8角形 */
 
