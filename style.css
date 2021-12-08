@@ -13,7 +13,7 @@ body {
     margin: 0 auto;
     padding-left: 8%;
     padding-right: 8%;
-    padding-top: 100px;
+    padding-top: 50px;
     justify-content: space-between;
     align-items: center;
     width: 100%;
@@ -21,7 +21,7 @@ body {
 }
 
 .logo img {
-    width: 50%;
+    width: 40%;
 }
 
 .header_nav_list ul {
@@ -29,23 +29,41 @@ body {
     justify-content: center;
 }
 .header_nav_list li {
-    margin-right: 17%;
-    font-size: 4rem;
+    margin-right: 25%;
+    font-size: 3rem;
 }
 
 .header_container_second {
-    margin-top: 500px;
+    margin-top: 325px;
     text-align: center;
     position: relative;
+}
+
+/* メインタイトル h1 */
+
+.fv_border {
+    border-width: 4rem 0rem 0rem 0rem;
+    border-style: solid;
+    border-color: #ffff78;
+}
+
+.title_text {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+.header_container_second h1 img {
+    width: 540px;
+    margin-top: -80px;
 }
 
 /* 8角形 */
 
 .octagon img {
-    width: 1000px;
+    width: 650px;
     position: absolute;
     left: 50%;
-    top: 760px;
+    top: 500px;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
@@ -56,28 +74,10 @@ body {
 .triangle img {
     position: absolute;
     margin: 0 auto;
-    width: 84px;
-    top: 1115px;
+    width: 45px;
+    top: 700px;
     left: 50%;
     transform: translateX(-50%);
-}
-
-/* メインタイトル h1 */
-
-.fv_border {
-    border-width: 5rem 0rem 0rem 0rem;
-    border-style: solid;
-    border-color: #ffff78;
-}
-
-.title_text {
-    font-size: 3.7rem;
-    margin-bottom: 60px;
-}
-
-.header_container_second h1 img {
-    width: 740px;
-    margin-top: -100px;
 }
 
 /* ーーーーーーーここからメインーーーーーーー */
@@ -96,7 +96,7 @@ main {
 /* コンテンツタイトル */
 
 main .container h2 {
-    font-size: 5rem;
+    font-size: 3.5rem;
 }
 
 .title_border {
@@ -109,14 +109,14 @@ main .container h2 {
 }
 
 main .container h3 {
-    font-size: 6rem;
+    font-size: 4rem;
     margin-top: 20px;
 }
 
 .title_wrap {
     text-align: center;
-    margin: 0 auto 140px;
-    padding-top: 250px;
+    margin: 0 auto 110px;
+    padding-top: 200px;
 }
 
 /* ーーーーーーーabout わたしについてーーーーーーー */
@@ -127,14 +127,14 @@ main .container h3 {
 }
 
 .about_inner img {
-    width: 50%;
-    height: 50%;
+    width: 30%;
+    height: 30%;
     margin-right: 5%;
 }
 
 .about_inner p {
-    font-size: 3.4rem;
-    line-height: 1.75;
+    font-size: 2.8rem;
+    line-height: 1.5;
     width: 50%;
     font-feature-settings: "palt";
 }
@@ -168,11 +168,11 @@ main .container h3 {
 }
 
 .view_more img {
-    width: 100%;
+    width: 60%;
 }
 
 .view_more p {
-    font-size: 4rem;
+    font-size: 2rem;
     position: absolute;
     top: 45%;
     height: 50%;
@@ -180,7 +180,7 @@ main .container h3 {
 }
 
 .stickarrow {
-    width: 100%;
+    width: 65%;
     height: 40px;
     border-bottom: 1px solid #333;
     border-right: 1px solid #333;
@@ -203,7 +203,7 @@ main .container h3 {
 /* work始めにくる横長のHP制作イメージ */
 .work_top img {
     width: 100%;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 /* 下2枚、横並びのイメージ */
@@ -233,6 +233,11 @@ main .container h3 {
 
 .work_main {
     margin: 0;
+}
+
+.work_inner {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .title_wrap_work {
@@ -323,15 +328,15 @@ input,
 textarea {
     border: 3px solid #333;
     background-color: #ffffff;
-    width: 100%;
-    margin: 1rem 0 5rem;
+    width: 50%;
+    margin: 1rem 0 1rem;
     padding: 4px 4px;
     border-radius: 5px;
-    height: 10rem;
+    height: 5rem;
 }
 
 .Contact li {
-    font-size: 4rem;
+    font-size: 2.5rem;
 }
 
 .send_bt {
@@ -374,7 +379,7 @@ footer {
 }
 
 .tankyou {
-    font-size: 17.4rem;
+    font-size: 10rem;
     color: #333;
     margin-left: 2.6%;
     background: url(image/thankyou@2x.png) no-repeat left center/contain;
@@ -387,7 +392,7 @@ footer {
 }
 
 .snsicon img {
-    width: 4rem;
+    width: 3rem;
     margin-right: 4rem;
 }
 
@@ -404,7 +409,7 @@ footer {
 }
 
 .to_top img {
-    width: 100px;
+    width: 55px;
 }
 
 /* ハンバーガーメニュー */
@@ -413,7 +418,7 @@ footer {
     display: none;
 }
 /* スマホボタン消す */
-.sp_nav_btn {
+.sp_menu_btn {
     display: none;
 }
 
