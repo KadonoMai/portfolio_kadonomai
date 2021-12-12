@@ -324,30 +324,38 @@ main .container h3 {
 }
 /* ーーーーーーーcontact お問い合わせーーーーーーー */
 
-input,
+input[type="text"],
+input[type="email"],
 textarea {
-    border: 3px solid #333;
+    border: 2px solid #333;
     background-color: #ffffff;
-    width: 50%;
-    margin: 1rem 0 1rem;
+    width: 100%;
+    margin: 0.5rem 0rem 3rem;
     padding: 4px 4px;
     border-radius: 5px;
     height: 5rem;
 }
 
-.Contact li {
-    font-size: 2.5rem;
+.inp_list {
+    margin: 0 auto;
+    max-width: 50%;
+    justify-content: center;
+}
+
+.inp_list p {
+    font-size: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 
 .send_bt {
-    border: 3px solid #333;
-    background-color: #ffffff;
-    width: 12%;
-    margin: 1rem 0 5rem;
-    padding: 5px 5px;
-    border-radius: 5px;
-    height: 6rem;
     text-align: center;
+    max-width: 25%;
+}
+
+input[type="submit"] {
+    background-color: #ffff78;
+    color: #333;
 }
 
 .contact_link a:hover {
@@ -668,20 +676,8 @@ footer {
 
     /* ーーーーーーーcontact お問い合わせーーーーーーー */
 
-    .contact_link p {
-        font-size: 2.5rem;
-        margin-top: -75px;
-    }
-
-    .send_bt {
-        border: 3px solid #333;
-        background-color: #ffffff;
-        width: 15%;
-        margin: 1rem 0 3rem;
-        padding: 5px 5px;
-        border-radius: 5px;
-        height: 6rem;
-        text-align: center;
+    .inp_list p {
+        font-size: 1.5rem;
     }
 
     .tankyou {
@@ -835,7 +831,7 @@ footer {
 
     .stickarrow {
         width: 55%;
-        height: 40px;
+        height: 30px;
         border-bottom: 1px solid #333;
         border-right: 1px solid #333;
         transform: skew(45deg);
@@ -881,35 +877,8 @@ footer {
 
     /* contact お問い合わせ */
 
-    input,
-    textarea {
-        border: 3px solid #333;
-        background-color: #ffffff;
-        width: 100%;
-        margin: 1rem 0 3rem;
-        padding: 4px 4px;
-        border-radius: 5px;
-        height: 6rem;
-    }
-
-    .Contact li {
+    .inp_list p {
         font-size: 1rem;
-    }
-
-    .contact_link p {
-        font-size: 1rem;
-        margin-top: -35px;
-    }
-
-    .send_bt {
-        text-align: center;
-        border: 3px solid #333;
-        background-color: #ffffff;
-        width: 25%;
-        margin: 1rem 0 3rem;
-        padding: 5px 5px;
-        border-radius: 5px;
-        height: 4rem;
     }
 
     .tankyou {
