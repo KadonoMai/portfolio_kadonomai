@@ -146,13 +146,16 @@ main .container h3 {
 
 .about_inner_sbu {
     text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
 }
 
 .about_inner_sbu p {
-    font-size: 3.9rem;
+    font-size: 2.3rem;
     line-height: 1.75;
     font-feature-settings: "palt";
     text-align: left;
+    display: inline-block;
 }
 
 /* view_more 共通箇所 */
@@ -186,8 +189,7 @@ main .container h3 {
     border-right: 1px solid #333;
     transform: skew(45deg);
     position: absolute;
-    top: 50%;
-    left: -2%;
+    top: 40%;
 }
 
 /* ーーーーーーーwork 仕事ーーーーーーー*/
@@ -209,19 +211,16 @@ main .container h3 {
 /* 下2枚、横並びのイメージ */
 .work_sub {
     display: flex;
+    /* max-width: 1000px; */
 }
 
 .work_first img {
-    width: 98%;
+    width: 178px;
     margin-right: 10px;
 }
 
 .work_second img {
-    width: 100%;
-}
-
-.work_second {
-    justify-content: flex-end;
+    width: 408px;
 }
 
 /* workのviewmoreはセンター揃え */
@@ -249,6 +248,8 @@ main .container h3 {
 .work_sub_column {
     display: block;
     flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
 }
 
 .work_img img {
@@ -280,7 +281,7 @@ main .container h3 {
 }
 
 .cafe_btn p {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 /* ーーーーーーーskill_subーーーーーーー */
@@ -295,7 +296,7 @@ main .container h3 {
 }
 
 .skill_wrap_smallwrap {
-    width: 33%;
+    width: 30%;
 }
 
 .skill_wrap_smallwrap img {
@@ -305,22 +306,23 @@ main .container h3 {
 }
 
 .figcaption h4 {
-    font-size: 3.5rem;
-    margin-top: 30px;
+    font-size: 3rem;
+    margin-top: 5px;
 }
 
 .figcaption p {
-    font-size: 2.4rem;
-    line-height: 1.75;
-    margin-top: 15px;
+    font-size: 2rem;
+    line-height: 1.5;
+    margin-top: 10px;
+    padding-right: 20px;
     font-feature-settings: "palt";
 }
 
 .skill_wrap_smallwrap img.adobe {
     width: 50%;
-    height: 50px;
+    height: 40px;
     border-radius: 0%;
-    justify-self: start;
+    /* justify-self: start; */
 }
 /* ーーーーーーーcontact お問い合わせーーーーーーー */
 
@@ -356,6 +358,13 @@ textarea {
 input[type="submit"] {
     background-color: #ffff78;
     color: #333;
+    height: 3rem;
+    border-radius: 5px;
+}
+
+.contact_link {
+    width: 60%;
+    margin: 0 auto;
 }
 
 .contact_link a:hover {
@@ -366,9 +375,9 @@ input[type="submit"] {
 }
 
 .contact_link p {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center;
-    margin-top: -90px;
+    margin-top: -75px;
 }
 
 /* ーーーーーーーfooterーーーーーーー */
@@ -440,8 +449,8 @@ footer {
     .sp_menu_btn {
         display: block;
         position: absolute;
-        right: 10px;
-        top: 130px;
+        right: 30px;
+        top: 60px;
         height: 30px;
         z-index: 10000;
         cursor: pointer;
@@ -449,7 +458,7 @@ footer {
 
     .sp_menu_btn span {
         background-color: #333;
-        width: 75px;
+        width: 60px;
         height: 5px;
         display: block;
         position: relative;
@@ -460,7 +469,7 @@ footer {
     .sp_menu_btn span::before,
     .sp_menu_btn span::after {
         content: "";
-        width: 75px;
+        width: 60px;
         height: 5px;
         display: block;
         background-color: #333;
@@ -517,10 +526,10 @@ footer {
     /* 8角形 */
 
     .octagon img {
-        width: 750px;
+        width: 600px;
         position: absolute;
         left: 50%;
-        top: 760px;
+        top: 455px;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -531,8 +540,8 @@ footer {
     .triangle img {
         position: absolute;
         margin: 0 auto;
-        width: 65px;
-        top: 1025px;
+        width: 50px;
+        top: 650px;
         left: 50%;
         transform: translateX(-50%);
     }
@@ -540,25 +549,29 @@ footer {
     /* メインタイトル h1 */
 
     .fv_border {
-        border-width: 5rem 0rem 0rem 0rem;
+        border-width: 3.5rem 0rem 0rem 0rem;
         border-style: solid;
         border-color: #ffff78;
     }
 
     .title_text {
         font-size: 3rem;
-        margin-bottom: 60px;
+        margin-bottom: 40px;
+    }
+
+    .header_container_second {
+        margin-top: 275px;
     }
 
     .header_container_second h1 img {
-        width: 600px;
-        margin-top: -88px;
+        width: 430px;
+        margin-top: -63px;
     }
 
     .title_wrap {
         text-align: center;
-        margin: 0 auto 140px;
-        padding-top: 200px;
+        margin: 0 auto 70px;
+        padding-top: 150px;
     }
 
     /* view_more  */
@@ -608,17 +621,20 @@ footer {
     }
 
     .about_inner p {
-        font-size: 2.1rem;
-        line-height: 1.75;
+        font-size: 2rem;
+        line-height: 1.6;
         width: 50%;
         margin: 30px auto 10px;
         font-feature-settings: "palt";
     }
 
+    .about_inner_sbu {
+        max-width: 50%;
+    }
+
     .about_inner_sbu p {
-        font-size: 3rem;
+        font-size: 2rem;
         line-height: 1.6;
-        font-feature-settings: "palt";
     }
 
     /* work_仕事 */
@@ -627,10 +643,6 @@ footer {
         max-width: 100%;
         width: 300px;
     }
-
-    /* .Work .figcaption {
-        display: block;
-    } */
 
     .work_first img {
         width: 100%;
@@ -641,8 +653,17 @@ footer {
         display: block;
     }
 
+    .work_first {
+        width: 50%;
+        margin: 0 auto;
+    }
+
     .work_second {
         display: none;
+    }
+
+    .cafe_btn p {
+        font-size: 2rem;
     }
 
     /* スキル＿出来ること */
@@ -660,8 +681,8 @@ footer {
     }
 
     .skill_wrap_smallwrap img.adobe {
-        width: 25%;
-        height: 20px;
+        width: 30%;
+        height: 25px;
         border-radius: 0%;
     }
 
@@ -676,12 +697,28 @@ footer {
 
     /* ーーーーーーーcontact お問い合わせーーーーーーー */
 
+    .contact_link {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .contact_link p {
+        font-size: 2rem;
+        margin-top: -58px;
+    }
+
     .inp_list p {
         font-size: 1.5rem;
     }
 
+    /* ーーーーーーーfooterーーーーーーー */
+
+    footer {
+        margin-top: 150px;
+    }
+
     .tankyou {
-        font-size: 10rem;
+        font-size: 8rem;
         color: #333;
         margin-left: 2.6%;
         background: url(image/thankyou@2x.png) no-repeat left center/contain;
@@ -702,34 +739,45 @@ footer {
         font-size: 1.8rem;
     }
     .to_top img {
-        width: 80px;
+        width: 50px;
     }
 }
 
 @media screen and (max-width: 767px) {
     .header_container {
-        padding-top: 60px;
+        padding-top: 35px;
     }
 
     .sp_menu_btn {
-        top: 60px;
+        top: 30px;
     }
 
     .sp_menu_btn span {
-        width: 60px;
+        width: 35px;
+        height: 3px;
     }
 
     .sp_menu_btn span::before,
     .sp_menu_btn span::after {
-        width: 60px;
+        width: 35px;
+        height: 3px;
     }
+
+    .sp_menu_btn span::before {
+        bottom: 10px;
+    }
+
+    .sp_menu_btn span::after {
+        top: 10px;
+    }
+
     /* 8角形 */
 
     .octagon img {
         width: 270px;
         position: absolute;
         left: 50%;
-        top: 350px;
+        top: 250px;
         transform: translate(-50%, -50%);
         -webkit-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
@@ -749,7 +797,7 @@ footer {
     /* メインタイトル h1 */
 
     .header_container_second {
-        margin-top: 210px;
+        margin-top: 157px;
         position: relative;
     }
 
@@ -760,13 +808,13 @@ footer {
     }
 
     .title_text {
-        font-size: 2rem;
-        margin-bottom: 15px;
+        font-size: 1.3rem;
+        margin-bottom: 4px;
     }
 
     .header_container_second h1 img {
-        width: 260px;
-        margin-top: -40px;
+        width: 230px;
+        margin-top: -34px;
     }
 
     /* コンテンツタイトル */
@@ -776,11 +824,11 @@ footer {
     }
 
     main .container h2 {
-        font-size: 3rem;
+        font-size: 1.5rem;
     }
 
     .title_border {
-        height: 7px;
+        height: 4px;
         background-color: #ffff78;
         border: none;
         border-radius: 20px;
@@ -789,18 +837,18 @@ footer {
     }
 
     main .container h3 {
-        font-size: 3rem;
-        margin-top: 20px;
+        font-size: 2rem;
+        margin-top: 10px;
     }
 
     .title_wrap {
         text-align: center;
-        margin: 0 auto 50px;
-        padding-top: 100px;
+        margin: 0 auto 30px;
+        padding-top: 60px;
     }
 
     .main .container h3 {
-        font-size: 3rem;
+        font-size: 1.7rem;
         margin-top: 10px;
     }
 
@@ -818,26 +866,26 @@ footer {
     }
 
     .view_more img {
-        width: 60%;
+        width: 40%;
     }
 
     .view_more p {
-        font-size: 2rem;
+        font-size: 1.3rem;
         position: absolute;
         top: 45%;
         height: 50%;
-        padding-left: 50px;
+        padding-left: 80px;
     }
 
     .stickarrow {
-        width: 55%;
-        height: 30px;
+        width: 40%;
+        height: 25px;
         border-bottom: 1px solid #333;
         border-right: 1px solid #333;
         transform: skew(45deg);
         position: absolute;
         top: 45%;
-        left: 10%;
+        left: 20%;
     }
 
     .about_inner {
@@ -845,29 +893,35 @@ footer {
     }
 
     .about_inner p {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
         line-height: 1.6;
-        width: 80%;
+        width: 75%;
         font-feature-settings: "palt";
     }
 
+    .about_inner_sbu {
+        max-width: 80%;
+    }
+
     .about_inner_sbu p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         line-height: 1.3;
-        font-feature-settings: "palt";
     }
 
     .work_top {
         margin-bottom: 30px;
     }
 
+    .figcaption h4 {
+        font-size: 2rem;
+    }
+
     .figcaption p {
-        font-size: 1.8rem;
-        line-height: 1.5;
+        font-size: 1.2rem;
     }
 
     .work_figcaption p {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         line-height: 1.5;
     }
 
@@ -875,10 +929,39 @@ footer {
         font-size: 1rem;
     }
 
+    .skill_wrap_smallwrap {
+        max-width: 80%;
+    }
+
+    .skill_wrap_smallwrap img.adobe {
+        height: 21px;
+    }
+
     /* contact お問い合わせ */
+
+    .contact_link {
+        width: 60%;
+    }
+
+    .contact_link p {
+        font-size: 1rem;
+        margin-top: -30px;
+    }
 
     .inp_list p {
         font-size: 1rem;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        height: 3rem;
+        margin: 0.5rem 0rem 1rem;
+    }
+
+    input[type="submit"] {
+        height: 2rem;
+        border-radius: 5px;
     }
 
     .tankyou {
@@ -910,10 +993,10 @@ footer {
     .to_top {
         position: fixed;
         right: 20px;
-        bottom: 35px;
+        bottom: 30px;
     }
 
     .to_top img {
-        width: 50px;
+        width: 35px;
     }
 }
