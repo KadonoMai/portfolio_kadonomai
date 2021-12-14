@@ -34,7 +34,7 @@ body {
 }
 
 .header_container_second {
-    margin-top: 325px;
+    margin: 325px auto;
     text-align: center;
     position: relative;
 }
@@ -82,9 +82,9 @@ body {
 
 /* ーーーーーーーここからメインーーーーーーー */
 
-main {
+/* .main {
     margin-top: 300px;
-}
+} */
 
 .container {
     max-width: 1000px;
@@ -94,9 +94,20 @@ main {
 }
 
 /* コンテンツタイトル */
+/* h2 */
+.main,
+.about_main,
+.work_main .container h2 {
+    font-size: 3rem;
+}
 
-main .container h2 {
-    font-size: 3.5rem;
+/* h3 */
+
+.main,
+.about_main,
+.work_main .container h3 {
+    font-size: 3rem;
+    margin-top: 20px;
 }
 
 .title_border {
@@ -105,18 +116,13 @@ main .container h2 {
     border: none;
     border-radius: 20px;
     width: 10%;
-    margin: auto;
-}
-
-main .container h3 {
-    font-size: 4rem;
-    margin-top: 20px;
+    margin: 0 auto 10px;
 }
 
 .title_wrap {
     text-align: center;
     margin: 0 auto 110px;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 /* ーーーーーーーabout わたしについてーーーーーーー */
@@ -259,7 +265,7 @@ main .container h3 {
 
 /* 制作期間、使用ツール説明など */
 .work_figcaption p {
-    font-size: 3.5rem;
+    font-size: 2rem;
     line-height: 1.75;
 }
 
@@ -269,6 +275,7 @@ main .container h3 {
     background-color: #333;
     width: 50%;
     text-align: center;
+    padding: 1%;
 }
 
 .cafe_btn:hover {
@@ -278,10 +285,6 @@ main .container h3 {
 
 .cafe_btn_radius {
     border-radius: 100vh;
-}
-
-.cafe_btn p {
-    font-size: 2rem;
 }
 
 /* ーーーーーーーskill_subーーーーーーー */
@@ -360,6 +363,7 @@ input[type="submit"] {
     color: #333;
     height: 3rem;
     border-radius: 5px;
+    margin-left: auto;
 }
 
 .contact_link {
@@ -519,7 +523,7 @@ footer {
     .sp_nav li {
         color: #333;
         text-align: center;
-        font-size: 5rem;
+        font-size: 3rem;
         margin: 1em 0;
     }
 
@@ -560,7 +564,7 @@ footer {
     }
 
     .header_container_second {
-        margin-top: 275px;
+        margin: 275px auto;
     }
 
     .header_container_second h1 img {
@@ -568,10 +572,32 @@ footer {
         margin-top: -63px;
     }
 
+    .main,
+    .about_main,
+    .work_main .container h2 {
+        font-size: 3rem;
+    }
+
+    .main,
+    .about_main,
+    .work_main .container h3 {
+        font-size: 3rem;
+        margin-top: 10px;
+    }
+
+    .title_border {
+        height: 4px;
+        background-color: #ffff78;
+        border: none;
+        border-radius: 20px;
+        width: 10%;
+        margin: 0 auto 10px;
+    }
+
     .title_wrap {
         text-align: center;
         margin: 0 auto 70px;
-        padding-top: 150px;
+        padding-top: 85px;
     }
 
     /* view_more  */
@@ -584,11 +610,11 @@ footer {
     }
 
     .view_more img {
-        width: 70%;
+        width: 50%;
     }
 
     .view_more p {
-        font-size: 3rem;
+        font-size: 2rem;
         position: absolute;
         top: 45%;
         height: 50%;
@@ -596,8 +622,8 @@ footer {
     }
 
     .stickarrow {
-        width: 80%;
-        height: 40px;
+        width: 65%;
+        height: 25px;
         border-bottom: 1px solid #333;
         border-right: 1px solid #333;
         transform: skew(45deg);
@@ -662,10 +688,6 @@ footer {
         display: none;
     }
 
-    .cafe_btn p {
-        font-size: 2rem;
-    }
-
     /* スキル＿出来ること */
 
     .skill_wrap {
@@ -687,12 +709,8 @@ footer {
     }
 
     .work_figcaption p {
-        font-size: 2.5rem;
-        line-height: 1.75;
-    }
-
-    .cafe_btn p {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        line-height: 1.5;
     }
 
     /* ーーーーーーーcontact お問い合わせーーーーーーー */
@@ -771,6 +789,20 @@ footer {
         top: 10px;
     }
 
+    .open span {
+        background: transparent;
+    }
+
+    .open span::before {
+        transform: rotate(45deg);
+        bottom: 0px;
+    }
+
+    .open span::after {
+        transform: rotate(135deg);
+        top: 0px;
+    }
+
     /* 8角形 */
 
     .octagon img {
@@ -797,8 +829,7 @@ footer {
     /* メインタイトル h1 */
 
     .header_container_second {
-        margin-top: 157px;
-        position: relative;
+        margin: 160px auto;
     }
 
     .fv_border {
@@ -819,12 +850,21 @@ footer {
 
     /* コンテンツタイトル */
 
-    .main {
+    /* .main {
         margin-top: 150px;
     }
-
-    main .container h2 {
+ */
+    .main,
+    .about_main,
+    .work_main .container h2 {
         font-size: 1.5rem;
+    }
+
+    .main,
+    .about_main,
+    .work_main .container h3 {
+        font-size: 1.5rem;
+        margin-top: 10px;
     }
 
     .title_border {
@@ -832,24 +872,14 @@ footer {
         background-color: #ffff78;
         border: none;
         border-radius: 20px;
-        width: 10%;
-        margin: auto;
-    }
-
-    main .container h3 {
-        font-size: 2rem;
-        margin-top: 10px;
+        width: 7%;
+        margin: 0 auto 10px;
     }
 
     .title_wrap {
         text-align: center;
         margin: 0 auto 30px;
         padding-top: 60px;
-    }
-
-    .main .container h3 {
-        font-size: 1.7rem;
-        margin-top: 10px;
     }
 
     /* view_more  */
@@ -888,6 +918,10 @@ footer {
         left: 20%;
     }
 
+    .sp_nav li {
+        font-size: 2rem;
+    }
+
     .about_inner {
         margin: 0 auto 30px;
     }
@@ -912,6 +946,10 @@ footer {
         margin-bottom: 30px;
     }
 
+    .work_img {
+        margin-bottom: 30px;
+    }
+
     .figcaption h4 {
         font-size: 2rem;
     }
@@ -921,12 +959,13 @@ footer {
     }
 
     .work_figcaption p {
-        font-size: 1.5rem;
-        line-height: 1.5;
+        font-size: 1rem;
+        line-height: 1.2;
     }
 
-    .cafe_btn p {
-        font-size: 1rem;
+    /* デザインカフェへのボタン */
+    .cafe_btn {
+        width: 100%;
     }
 
     .skill_wrap_smallwrap {
@@ -945,7 +984,7 @@ footer {
 
     .contact_link p {
         font-size: 1rem;
-        margin-top: -30px;
+        margin-top: -26px;
     }
 
     .inp_list p {
