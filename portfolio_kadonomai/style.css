@@ -200,6 +200,7 @@ body {
 
 /* ーーーーーーーwork 仕事ーーーーーーー*/
 /* figcaptionはview moreで飛んでから制作期間、使用ツールを表示 */
+
 .Work .figcaption {
     display: none;
 }
@@ -239,7 +240,49 @@ body {
 .work_main {
     margin: 0;
 }
+.contents {
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
+.card-wrap {
+    display: flex;
+}
+
+.card-list {
+    background-color: #ffffff;
+    margin-right: 20px;
+}
+
+/* .card-list:nth-child(3n) {
+    margin-right: 0;
+} */
+
+.card-listImage > img {
+    margin: 0%;
+    width: 31.5%;
+    font-size: 0;
+}
+
+.card-listTitle {
+    font-size: 22px;
+    font-weight: 700;
+    color: #398072;
+    border-left: 10px solid #398072;
+    height: 30px;
+    margin: 10px 0px 10px 10px;
+    padding: 5px 0px 5px 5px;
+}
+
+.card-listText {
+    font-size: 17px;
+    color: #4c4c4c;
+    background-color: #ffffff;
+    background-clip: border-box;
+    margin: 0px;
+    padding: 5px 10px 10px;
+}
 .work_inner {
     width: 60%;
     margin: 0 auto;
@@ -260,7 +303,7 @@ body {
 
 .work_img img {
     width: 100%;
-    margin: 0 auto;
+    margin: 0 auto 10px;
 }
 
 /* 制作期間、使用ツール説明など */
